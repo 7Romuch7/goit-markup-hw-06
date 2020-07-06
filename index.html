@@ -346,10 +346,26 @@
    <!--Модальное окно-->
    <div class="backdrop is-hidden">
        <div class="modal">
-           <b>Оставьте свои данные, мы вам перезвоним</b>
-                <svg class="icon-close" width="11" height="11">
-                    <use href="./images/sprite.svg#envelope-2"></use>
-                </svg>
+           <b class="appeal">Оставьте свои данные, мы вам перезвоним</b>
+                <button type="button" class="close">
+                    <svg class="icon-close" width="11" height="11">
+                        <use href="./images/sprite.svg#vector"></use>
+                    </svg>
+                </button>
+            <form>
+                <input type="text" name="user-name" />
+
+                <input type="tel" name="tel" />
+
+                <input type="email" name="mail" />
+
+                <textarea name="comment" id="comment" rows="10"></textarea>
+
+                <input type="checkbox" name="policy" id="policy">
+                <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+
+                <button type="submit">Отправить</button>
+            </form>
        </div>
    </div>
 </body>
