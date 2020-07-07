@@ -101,6 +101,8 @@ ul {
 }
 
 .site-nav .link-1 {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -111,8 +113,6 @@ ul {
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .site-nav .link-1:hover,
@@ -165,6 +165,8 @@ ul {
 }
 
 .info {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     display: inline-flex;
     align-items: center;
     margin: 0;
@@ -176,8 +178,6 @@ ul {
     letter-spacing: 0.02em;
     text-decoration: none;
     font-style: normal;
-
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .auth-nav .info:hover,
@@ -227,12 +227,13 @@ ul {
 
 .service-title {
     display: inline-block;
-    border-radius: 4px;
+    
     min-width: 200px;
     padding: 10px 32px;
     margin-top: 0;
     margin-bottom: 0;
     border: 1px solid transparent;
+    border-radius: 4px;
 
     background-color: var(--accent-color);
     color: var(--white-color);
@@ -416,13 +417,13 @@ ul {
 }
 
 .social-list {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     display: inline-block;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     --color3: var(--complementary-color8);
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list:hover, .social-list:focus {
@@ -441,6 +442,8 @@ ul {
 }
 
 .customers-link {
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -448,8 +451,6 @@ ul {
     height: 90px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -556,14 +557,14 @@ ul {
 }
 
 .social-list-2 {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     display: inline-block;
     width: 44px;
     height: 44px;
     border-radius: 50%;
     background: var(--complementary-color4);
     --color3: var(--white-color);
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-list-2:hover,
@@ -617,6 +618,10 @@ ul {
     letter-spacing: 0.06em
 }
 
+.mailing:hover {
+    cursor: pointer;
+}
+
 .icon-mailing {
     width: 24px;
     height: 24px;
@@ -661,6 +666,8 @@ ul {
 }
 
 .filter .btn {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     display: inline-block;
     border-radius: 4px;
     padding: 6px 22px;
@@ -672,8 +679,6 @@ ul {
     line-height: 1.63;
     text-align: center;
     font-family: Roboto, sans-serif;
-
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .filter .btn:hover,
@@ -784,11 +789,11 @@ ul {
 }
 
 .works-list-item {
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     width: 370px;
     margin-right: 30px;
-    margin-bottom: 30px;
-
-    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 30px; 
 }
 
 .works-list-item:nth-child(3n) {
@@ -805,6 +810,8 @@ ul {
     0px 4px 4px rgba(0, 0, 0, 0.06),
     0px 1px 1px rgba(0, 0, 0, 0.12);
 }
+
+/* Модальное окно */
 
 .backdrop {
     position: fixed;
