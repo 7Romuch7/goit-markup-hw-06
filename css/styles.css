@@ -823,10 +823,10 @@ ul {
     background: rgba(0, 0, 0, 0.2);
 }
 
-.backdrop.is-hidden {
+/*.backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
-}
+}*/
 
 .modal {
     position: absolute;
@@ -867,4 +867,43 @@ ul {
     line-height: 1,15;
     text-align: center;
     color: var(--title-text-color);
+}
+
+/* Form */
+
+.form-service {
+    width: 448px;
+    margin: 0;
+    padding: 0;
+}
+
+.form-data {
+    position: relative;
+    margin-bottom: 28px;
+}
+
+.form-label {
+    position: absolute;
+    top: 50%;
+    left: 42px;
+    transform: translateY(-50%);
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+}
+
+.form-input {
+    width: 448px;
+    height: 40px;
+    margin: 0;
+    padding: 12px 42px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+
+.form-input:focus + .form-label {
+    color: var(--accent-color);
+    transform: translateY(-35px);
 }

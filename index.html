@@ -364,12 +364,19 @@
                         <use href="./images/sprite.svg#vector"></use>
                     </svg>
                 </button>
-            <form>
-                <input type="text" name="user-name" placeholder="Имя" />
-
-                <input type="tel" name="tel" placeholder="Телефон" />
-
-                <input type="email" name="mail" placeholder="Почта" />
+            <form class="form-service">
+                <div class="form-data">
+                    <input type="text" class="form-input" name="user-name" id="user-name" />
+                    <label for="user-name" class="form-label">Имя</label>
+                </div>
+                <div class="form-data">
+                    <input type="tel" class="form-input" name="telephone" id="telephone" />
+                    <label for="telephone" class="form-label">Телефон</label>
+                </div>
+                <div class="form-data">
+                    <input type="email" class="form-input" name="mail" id="mail" />
+                    <label for="mail" class="form-label">Почта</label>
+                </div>
 
                 <textarea name="comment" id="comment" rows="10" placeholder="Комментарий"></textarea>
 
