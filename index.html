@@ -358,7 +358,7 @@
    <!--Модальное окно-->
    <div class="backdrop is-hidden">
        <div class="modal">
-           <b class="appeal">Оставьте свои данные, мы вам перезвоним</b>
+           <p class="appeal">Оставьте свои данные, мы вам перезвоним</p>
                 <button type="button" class="close">
                     <svg class="icon-close" width="11" height="11">
                         <use href="./images/sprite.svg#vector"></use>
@@ -366,24 +366,36 @@
                 </button>
             <form class="form-service">
                 <div class="form-data">
-                    <input type="text" class="form-input" name="user-name" id="user-name" />
+                    <input type="text" class="form-input" name="user-name" id="user-name" placeholder=" " />
                     <label for="user-name" class="form-label">Имя</label>
+                    <svg class="icon-data">
+                        <use href="./images/sprite.svg#silhouette"></use>
+                    </svg>
                 </div>
                 <div class="form-data">
-                    <input type="tel" class="form-input" name="telephone" id="telephone" />
+                    <input type="tel" class="form-input" name="telephone" id="telephone" placeholder=" " />
                     <label for="telephone" class="form-label">Телефон</label>
+                    <svg class="icon-data">
+                        <use href="./images/sprite.svg#telephone"></use>
+                    </svg>
                 </div>
                 <div class="form-data">
-                    <input type="email" class="form-input" name="mail" id="mail" />
+                    <input type="email" class="form-input" name="mail" id="mail" placeholder=" " />
                     <label for="mail" class="form-label">Почта</label>
+                    <svg class="icon-data">
+                        <use href="./images/sprite.svg#envelope-2"></use>
+                    </svg>
                 </div>
-
-                <textarea name="comment" id="comment" rows="10" placeholder="Комментарий"></textarea>
-
-                <input type="checkbox" name="policy" id="policy">
-                <label for="policy">Соглашаюсь с рассылкой и принимаю Условия договора</label>
-
-                <button type="submit">Отправить</button>
+                <div class="form-data-comment">
+                    <label for="comment" class="form-label-2">Комментарий</label>
+                    <textarea class="wishes" name="comment" id="comment" rows="6" placeholder=" "></textarea>
+                </div>
+                <div class="form-checkbox">
+                    <input type="checkbox" class="checkbox" name="policy" id="policy">
+                    <span class="check-mark"></span>
+                    <label for="policy" class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                </div>
+                <button type="submit" class="send">Отправить</button>
             </form>
        </div>
    </div>
