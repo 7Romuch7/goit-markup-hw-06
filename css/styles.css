@@ -531,7 +531,6 @@ ul {
 
 .close:hover {
     fill: var(--accent-color);
-    cursor: pointer;
 }
 
 .appeal {
@@ -710,7 +709,7 @@ ul {
 }
 
 .send:hover {
-    cursor: pointer;
+    background-color: #2196F3;
 }
 
 /* Footer */
