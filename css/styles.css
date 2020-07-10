@@ -637,6 +637,11 @@ ul {
     border-radius: 4px;
 }
 
+.wishes:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
 .wishes:focus + .form-label-2,
 .wishes:not(:placeholder-shown) + .form-label-2 {
     color: var(--accent-color);
