@@ -531,6 +531,7 @@ ul {
 
 .close:hover {
     fill: var(--accent-color);
+    cursor: pointer;
 }
 
 .appeal {
@@ -582,6 +583,8 @@ ul {
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
     color: var(--accent-color);
+    border-color: var(--accent-color);
+    outline: none;
     transform: translateY(-40px) translateX(-25px);
 }
 
@@ -710,6 +713,8 @@ ul {
 
 .send:hover {
     background-color: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
 }
 
 /* Footer */
