@@ -49,7 +49,7 @@
                 <div class="container-hero">
                     <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                         <a class="service" href="">
-                            <p class="service-title">Заказать услугу</p>
+                            <button type="button"  class="service-title" data-modal-open>Заказать услугу</button>
                         </a>
                 </div>
             </section>
@@ -299,6 +299,51 @@
         </section>
     </main>
 
+    <!--Модальное окно-->
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <p class="appeal">Оставьте свои данные, мы вам перезвоним</p>
+                <button data-modal-close type="button" class="close">
+                    <svg class="icon-close" width="11" height="11">
+                        <use href="./images/sprite.svg#vector"></use>
+                    </svg>
+                </button>
+            <form class="form-service">
+                <div class="form-data">
+                    <input type="text" class="form-input" name="user-name" id="user-name" placeholder=" " />
+                    <label for="user-name" class="form-label">Имя</label>
+                    <svg class="icon-data">
+                        <use href="./images/sprite.svg#silhouette"></use>
+                    </svg>
+                </div>
+                <div class="form-data">
+                    <input type="tel" class="form-input" name="telephone" id="telephone" placeholder=" " />
+                    <label for="telephone" class="form-label">Телефон</label>
+                    <svg class="icon-data">
+                        <use href="./images/sprite.svg#telephone"></use>
+                    </svg>
+                </div>
+                <div class="form-data">
+                    <input type="email" class="form-input" name="mail" id="mail" placeholder=" " />
+                    <label for="mail" class="form-label">Почта</label>
+                    <svg class="icon-data">
+                        <use href="./images/sprite.svg#envelope-2"></use>
+                    </svg>
+                </div>
+                <div class="form-data-comment">
+                    <textarea class="wishes" name="comment" id="comment" rows="6" placeholder=" "></textarea>
+                    <label for="comment" class="form-label-2">Комментарий</label>
+                </div>
+                <label class="checkbox-label">
+                     <input type="checkbox" class="checkbox" name="policy">
+                     <span class="check-mark"></span>
+                     Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a>
+                </label>
+                <button type="submit" class="send">Отправить</button>
+            </form>
+        </div>
+    </div>
+
     <!-- Футер -->
     <footer class="footer">
         <div class="container data">
@@ -343,61 +388,20 @@
            <div class="container-mailing">
                <p class="invitation">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
                     <form class="form-mailing">
-                            <input type="email" name="mail" placeholder="E-mail" />
+                        <div class="form-container">
+                            <input class="input-mail" type="email" name="mail" placeholder="E-mail" />
                             <button type="submit" class="mailing">
                                 Подписаться
                                 <svg class="icon-mailing">
                                     <use href="./images/sprite.svg#send"></use>
                                 </svg>
                             </button>
-                        </form>
+                        </div> 
+                    </form>
            </div>
         </div>
    </footer>
 
-   <!--Модальное окно-->
-   <div class="backdrop is-hidden">
-       <div class="modal">
-           <p class="appeal">Оставьте свои данные, мы вам перезвоним</p>
-                <button type="button" class="close">
-                    <svg class="icon-close" width="11" height="11">
-                        <use href="./images/sprite.svg#vector"></use>
-                    </svg>
-                </button>
-            <form class="form-service">
-                <div class="form-data">
-                    <input type="text" class="form-input" name="user-name" id="user-name" placeholder=" " />
-                    <label for="user-name" class="form-label">Имя</label>
-                    <svg class="icon-data">
-                        <use href="./images/sprite.svg#silhouette"></use>
-                    </svg>
-                </div>
-                <div class="form-data">
-                    <input type="tel" class="form-input" name="telephone" id="telephone" placeholder=" " />
-                    <label for="telephone" class="form-label">Телефон</label>
-                    <svg class="icon-data">
-                        <use href="./images/sprite.svg#telephone"></use>
-                    </svg>
-                </div>
-                <div class="form-data">
-                    <input type="email" class="form-input" name="mail" id="mail" placeholder=" " />
-                    <label for="mail" class="form-label">Почта</label>
-                    <svg class="icon-data">
-                        <use href="./images/sprite.svg#envelope-2"></use>
-                    </svg>
-                </div>
-                <div class="form-data-comment">
-                    <label for="comment" class="form-label-2">Комментарий</label>
-                    <textarea class="wishes" name="comment" id="comment" rows="6" placeholder=" "></textarea>
-                </div>
-                <div class="form-checkbox">
-                    <input type="checkbox" class="checkbox" name="policy" id="policy">
-                    <span class="check-mark"></span>
-                    <label for="policy" class="checkbox-label">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
-                </div>
-                <button type="submit" class="send">Отправить</button>
-            </form>
-       </div>
-   </div>
+   <script src="./js/modal.js"></script>
 </body>
 </html>
