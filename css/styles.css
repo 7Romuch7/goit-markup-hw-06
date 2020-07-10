@@ -580,11 +580,14 @@ ul {
     border-radius: 4px;
 }
 
+.form-input:focus {
+    border-color: var(--accent-color);
+    outline: none;
+}
+
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown) + .form-label {
     color: var(--accent-color);
-    border-color: var(--accent-color);
-    outline: none;
     transform: translateY(-40px) translateX(-25px);
 }
 
